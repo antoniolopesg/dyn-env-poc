@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import { prisma } from "./lib/prisma";
+import { prisma } from "./prisma";
 import { readEnvironments, syncEnvironmentsFromDb, upsertSingleEnvironment } from "./environmentService";
 
 const fastify = Fastify({

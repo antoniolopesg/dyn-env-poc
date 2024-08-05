@@ -1,4 +1,4 @@
-import { prisma } from "./lib/prisma"
+import { prisma } from "./prisma"
 
 export async function syncEnvironmentsFromDb() {
   const environments = await prisma.environment.findMany()
