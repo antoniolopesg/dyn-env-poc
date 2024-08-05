@@ -10,6 +10,7 @@ type GetEnvironmentsQuery = {
   fromProcess: boolean
 }
 
+// Just a proof of concept validatin, don't add this in production
 fastify.get('/environments', async (request, reply) => {
   try {
     const { fromProcess } = request.query as GetEnvironmentsQuery
