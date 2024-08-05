@@ -36,6 +36,7 @@ type UpdateEnvironmentRequest = {
   value: string
 }
 
+// In production this route must be private
 fastify.put('/environments', async (request, reply) => {
   const { name, value } = request.body as UpdateEnvironmentRequest
 
